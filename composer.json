@@ -1,18 +1,24 @@
 {
-    "name": "telphin/api-client",
-    "description": "Telphin php unofficial sdk",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Belyaev Vladimir",
-            "email": "telyfonmail@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Telphin\\": "lib/"
-        }
+  "name": "telphin/api-client",
+  "description": "Telphin php unofficial sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Belyaev Vladimir",
+      "email": "telyfonmail@gmail.com"
+    },
+    {
+      "name": "Sergienko Denis",
+      "email": "dev@web-sfera.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Telphin\\": "lib/"
+    }
+  }
 }
