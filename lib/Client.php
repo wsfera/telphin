@@ -49,6 +49,7 @@ class Client
     protected function makeRequest(string $pathInput, string $method, array $dataInput = [], $encode = false)
     {
         $curlHandler = curl_init();
+        $path = $pathInput;
         if (self::METHOD_GET == $method && count($dataInput)) {
             $path=  $pathInput."?" . http_build_query($dataInput, '', '&');
         }
