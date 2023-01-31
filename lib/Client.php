@@ -99,7 +99,7 @@ class Client
         $codeResponse = curl_getinfo($curlHandler, CURLINFO_RESPONSE_CODE);
         curl_close($curlHandler);
         if ($codeResponse == "404") return (object)$this->conf->conf("errors.response404");
-        if ($codeResponse == "401" || !$this->token) {
+        if ($codeResponse == "401") {
             $this->token = "";
             return $this->makeRequest($pathInput, $method, $dataInput, $encode);
         }
